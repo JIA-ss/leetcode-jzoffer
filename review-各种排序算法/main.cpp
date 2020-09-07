@@ -29,6 +29,23 @@ void insert(int* a, int len) {
     }
 }
 
+/*希尔排序
+ * */
+void shell(int* a, int len) {
+    int inc = len;
+    while (inc > 1) {
+        inc /= 2;
+        for (int i = inc; i < len; i += inc) {
+            int num = a[i];
+            int j = i - inc;
+            for(j; j >= 0 && a[j] > num; j -= inc) {
+                a[j + inc] = a[j];
+            }
+            a[j + inc] = num;
+        }
+    }
+}
+
 
 /*快速排序
  * 1. 找到一个元素的位置，左边都比他小，右边都比他大
@@ -52,7 +69,8 @@ void quick(int* a, int start, int end) {
 
 int main() {
     int a[8] = {4,5,6,7,3,22,2,1};
-    insert(a,8);
+    //insert(a,8);
+    shell(a,8);
     //quick(a,0,7);
     for (int i = 0; i < 8; i++) cout << a[i] << " ";
     return 0;
