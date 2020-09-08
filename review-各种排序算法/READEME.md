@@ -287,6 +287,6 @@ void merge(int* a, int start, int end) {
         a[i] = p[p_idx++];
     }
     delete[] p;
-
+}
 ```
 
