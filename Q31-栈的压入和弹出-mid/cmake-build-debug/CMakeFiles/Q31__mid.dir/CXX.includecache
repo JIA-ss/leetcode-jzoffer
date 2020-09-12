@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ssjia/git_Proj/leetcode-jzoffer/Q31-栈的压入和弹出-mid/main.cpp
+iostream
+-
+vector
+-
+
