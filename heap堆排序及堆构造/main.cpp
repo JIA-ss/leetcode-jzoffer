@@ -18,7 +18,7 @@ void heap_adjust_part(int* a,int root, int len) {
         if (a[maxChild] > a[root]) {    //堆被破坏，需要重新调整
             swap(a[root], a[maxChild]);
             printf(a,"第"+to_string(i++)+"次: ");
-            heap_adjust_part(a,maxChild,len);   //这里对于排序算法来说，可以注释掉，因为堆排序核心是要拿出最大的值，无需过于关心子树是否满足堆关系
+            heap_adjust_part(a,maxChild,len);
         }
     }
 }
