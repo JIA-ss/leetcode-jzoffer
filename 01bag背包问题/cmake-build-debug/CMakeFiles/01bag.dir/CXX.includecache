@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ssjia/git_Proj/leetcode-jzoffer/01bag背包问题/main.cpp
+iostream
+-
+vector
+-
+algorithm
+-
+
