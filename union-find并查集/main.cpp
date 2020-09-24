@@ -1,5 +1,7 @@
 #include <iostream>
 #include <vector>
+#include <map>
+#include <unordered_map>
 using namespace std;
 class Solution {
 public:
@@ -51,6 +53,9 @@ public:
 
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    string a = "abc";
+    string b = "cde";
+    map<string*,string> mp;
+    mp[&a] = a;
     return 0;
 }
